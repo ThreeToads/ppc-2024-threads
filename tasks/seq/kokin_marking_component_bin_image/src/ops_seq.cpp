@@ -1,7 +1,6 @@
 // Copyright 2024 Kokin Ivan
-#include "seq/kokin_marking_component_bin_image/include/ops_seq.hpp"
 
-#include <thread>
+#include "seq/kokin_marking_component_bin_image/include/ops_seq.hpp"
 
 using namespace std::chrono_literals;
 
