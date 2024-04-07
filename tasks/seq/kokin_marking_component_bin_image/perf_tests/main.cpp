@@ -57,7 +57,7 @@ TEST(kokin_marking_component_bin_image_test, test_task_run) {
   taskDataSeq->outputs.emplace_back(reinterpret_cast<uint8_t *>(out.data()));
   taskDataSeq->outputs_count.emplace_back(out.size());
 
-  auto testTaskSeq = std::make_shared<markingImageSeq>(taskDataSeq);
+  auto testTaskSeq = std::make_shared<imageMarkingSeq>(taskDataSeq);
 
   auto perfAttr = std::make_shared<ppc::core::PerfAttr>();
   perfAttr->num_running = 10;
