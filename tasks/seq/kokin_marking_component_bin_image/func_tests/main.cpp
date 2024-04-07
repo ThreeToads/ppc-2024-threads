@@ -29,7 +29,6 @@ TEST(kokin_marking_component_bin_image_test, test_1) {
   ASSERT_EQ(out, cmpt);
 }
 
-
 TEST(kokin_marking_component_bin_image_test, test_2) {
   uint32_t ht = 8;
   uint32_t wh = 8;
@@ -53,7 +52,6 @@ TEST(kokin_marking_component_bin_image_test, test_2) {
   testTaskSequential.post_processing();
   ASSERT_EQ(out, cmpt);
 }
-
 
 TEST(kokin_marking_component_bin_image_test, test_3) {
   uint32_t ht = 5;
@@ -80,7 +78,6 @@ TEST(kokin_marking_component_bin_image_test, test_3) {
   ASSERT_EQ(out, cmpt);
 }
 
-
 TEST(kokin_marking_component_bin_image_test, test_4) {
   uint32_t ht = 3;
   uint32_t wh = 3;
@@ -106,15 +103,12 @@ TEST(kokin_marking_component_bin_image_test, test_4) {
   ASSERT_EQ(out, cmpt);
 }
 
-
 TEST(kokin_marking_component_bin_image_test, test_5) {
   uint32_t ht = 7;
   uint32_t wh = 7;
   std::vector<uint32_t> size = {ht, wh};
-  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
-                             1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
-  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1,
-                               1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2};
+  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0};
+  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2, 1, 1, 0, 0, 2, 1, 2};
 
   std::vector<uint8_t> out(ht * wh, 0);
 
@@ -133,7 +127,6 @@ TEST(kokin_marking_component_bin_image_test, test_5) {
   testTaskSequential.post_processing();
   ASSERT_EQ(out, cmpt);
 }
-
 
 int main(int argc, char **argv) {
   testing::InitGoogleTest(&argc, argv);
