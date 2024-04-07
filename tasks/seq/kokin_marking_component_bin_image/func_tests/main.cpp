@@ -129,8 +129,3 @@ TEST(kokin_marking_component_bin_image_test, test_5) {
   testTaskSequential.post_processing();
   ASSERT_EQ(out, cmpt);
 }
-
-int main(int argc, char **argv) {
-  testing::InitGoogleTest(&argc, argv);
-  return RUN_ALL_TESTS();
-}
