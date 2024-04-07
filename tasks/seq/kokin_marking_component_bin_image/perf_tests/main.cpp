@@ -73,7 +73,6 @@ TEST(sequential_example_perf_test, test_task_run) {
   // Create and init perf results
   auto perfResults = std::make_shared<ppc::core::PerfResults>();
 
-  // Create Perf analyzer
   auto perfAnalyzer = std::make_shared<ppc::core::Perf>(testTaskSequential);
   perfAnalyzer->task_run(perfAttr, perfResults);
   ppc::core::Perf::print_perf_statistic(perfResults);
