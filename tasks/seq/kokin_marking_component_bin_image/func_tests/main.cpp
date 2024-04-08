@@ -54,11 +54,11 @@ TEST(kokin_marking_component_bin_image_test, test_2) {
 }
 
 TEST(kokin_marking_component_bin_image_test, test_3) {
-  uint32_t ht = 4;
-  uint32_t wh = 4;
+  uint32_t ht = 3;
+  uint32_t wh = 6;
   std::vector<uint32_t> size = {ht, wh};
-  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1};
-  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0};
+  std::vector<uint8_t> in = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0};
+  std::vector<uint8_t> cmpt = {0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 2, 0, 0, 0, 1, 1};
 
   std::vector<uint8_t> out(ht * wh, 0);
 
@@ -79,11 +79,13 @@ TEST(kokin_marking_component_bin_image_test, test_3) {
 }
 
 TEST(kokin_marking_component_bin_image_test, test_4) {
-  uint32_t ht = 3;
-  uint32_t wh = 3;
+  uint32_t ht = 5;
+  uint32_t wh = 10;
   std::vector<uint32_t> size = {ht, wh};
-  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 1, 1};
-  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 2, 2, 0, 0};
+  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1,
+                             1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1};
+  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 0, 0, 0,
+                               0, 0, 0, 0, 0, 0, 1, 0, 0, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0};
 
   std::vector<uint8_t> out(ht * wh, 0);
 
@@ -104,13 +106,11 @@ TEST(kokin_marking_component_bin_image_test, test_4) {
 }
 
 TEST(kokin_marking_component_bin_image_test, test_5) {
-  uint32_t ht = 7;
-  uint32_t wh = 7;
+  uint32_t ht = 5;
+  uint32_t wh = 5;
   std::vector<uint32_t> size = {ht, wh};
-  std::vector<uint8_t> in = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
-                             1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1};
-  std::vector<uint8_t> cmpt = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 4, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4,
-                               0, 0, 0, 5, 5, 0, 0, 0, 0, 4, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 0};
+  std::vector<uint8_t> in = {0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1};
+  std::vector<uint8_t> cmpt = {1, 1, 0, 0, 2, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 3, 3, 0, 0, 0};
 
   std::vector<uint8_t> out(ht * wh, 0);
 
