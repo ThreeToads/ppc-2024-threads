@@ -61,7 +61,6 @@ TEST(kokin_marking_component_bin_image, test_3) {
   std::vector<uint8_t> out(ht * wh, 0);
   std::vector<uint8_t> cmpt = {0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 2, 0, 0, 0, 1, 1};
 
-
   std::shared_ptr<ppc::core::TaskData> taskDataSeq = std::make_shared<ppc::core::TaskData>();
   taskDataSeq->inputs.emplace_back(reinterpret_cast<uint8_t *>(size.data()));
   taskDataSeq->inputs_count.emplace_back(size.size());
