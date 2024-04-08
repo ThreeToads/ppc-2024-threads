@@ -5,9 +5,9 @@
 
 #include "seq/kokin_marking_component_bin_image/include/ops_seq.hpp"
 
-TEST(kokin_marking_component_bin_image_test, test_1) {
-  uint32_t ht = 10;
-  uint32_t wh = 10;
+TEST(kokin_marking_component_bin_image, test_1) {
+  uint32_t ht = 5;
+  uint32_t wh = 5;
   std::vector<uint32_t> size = {ht, wh};
   std::vector<uint8_t> in(ht * wh, 1);
   std::vector<uint8_t> out(ht * wh, 0);
@@ -29,9 +29,9 @@ TEST(kokin_marking_component_bin_image_test, test_1) {
   ASSERT_EQ(out, cmpt);
 }
 
-TEST(kokin_marking_component_bin_image_test, test_2) {
-  uint32_t ht = 10;
-  uint32_t wh = 10;
+TEST(kokin_marking_component_bin_image, test_2) {
+  uint32_t ht = 5;
+  uint32_t wh = 5;
   std::vector<uint32_t> size = {ht, wh};
   std::vector<uint8_t> in(ht * wh, 0);
   std::vector<uint8_t> out(ht * wh, 0);
@@ -53,7 +53,7 @@ TEST(kokin_marking_component_bin_image_test, test_2) {
   ASSERT_EQ(out, cmpt);
 }
 
-TEST(kokin_marking_component_bin_image_test, test_3) {
+TEST(kokin_marking_component_bin_image, test_3) {
   uint32_t ht = 3;
   uint32_t wh = 6;
   std::vector<uint32_t> size = {ht, wh};
@@ -78,7 +78,7 @@ TEST(kokin_marking_component_bin_image_test, test_3) {
   ASSERT_EQ(out, cmpt);
 }
 
-TEST(kokin_marking_component_bin_image_test, test_4) {
+TEST(kokin_marking_component_bin_image, test_4) {
   uint32_t ht = 5;
   uint32_t wh = 10;
   std::vector<uint32_t> size = {ht, wh};
@@ -105,7 +105,7 @@ TEST(kokin_marking_component_bin_image_test, test_4) {
   ASSERT_EQ(out, cmpt);
 }
 
-TEST(kokin_marking_component_bin_image_test, test_5) {
+TEST(kokin_marking_component_bin_image, test_5) {
   uint32_t ht = 5;
   uint32_t wh = 5;
   std::vector<uint32_t> size = {ht, wh};
