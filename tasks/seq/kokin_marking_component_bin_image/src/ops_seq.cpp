@@ -51,7 +51,7 @@ void imageMarkingSeq::imageMark() {
   std::vector<std::vector<uint32_t *>> maparr;
   maparr.resize(ht);
   for (size_t i = 0; i < ht; ++i) maparr[i].resize(ht, nullptr);
-  for (size_t i = 0; i < ht; ++i) {
+  for (size_t i = 0; i < wh; ++i) {
     if (src[0][i] == 0) {
       if (i == 0 || maparr[0][i - 1] == nullptr) {
         vectr.push_back(++scur);
