@@ -68,7 +68,7 @@ void imageMarkingSeq::imageMark() {
       } else
         maparr[i][0] = maparr[i - 1][0];
     }
-    for (size_t j = 1; j < ht; ++j) {
+    for (size_t j = 1; j < wh; ++j) {
       if (src[i][j] == 0) {
         if (maparr[i - 1][j] == maparr[i][j - 1]) {
           if (maparr[i - 1][j] == nullptr) {
