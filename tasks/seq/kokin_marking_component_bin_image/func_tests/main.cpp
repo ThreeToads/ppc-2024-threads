@@ -57,7 +57,7 @@ TEST(kokin_marking_component_bin_image, test_3) {
   uint32_t ht = 3;
   uint32_t wh = 6;
   std::vector<uint32_t> size = {ht, wh};
-  std::vector<uint8_t> in =  {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0};
+  std::vector<uint8_t> in = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0};
   std::vector<uint32_t> out(ht * wh, 0);
   std::vector<uint32_t> cmpt = {0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 2, 0, 0, 0, 1, 1};
 
