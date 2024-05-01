@@ -74,7 +74,6 @@ bool imageMarkingOMP::run() {
   return true;
 }
 
-
 bool imageMarkingOMP::pre_processing() {
   // func run for init value for input and output
   internal_order_test();
