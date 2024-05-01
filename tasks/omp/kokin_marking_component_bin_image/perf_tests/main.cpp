@@ -6,8 +6,6 @@
 #include "core/perf/include/perf.hpp"
 #include "omp/kokin_marking_component_bin_image/include/ops_omp.hpp"
 
-using namespace KokinOmpRealese;
-
 TEST(kokin_marking_component_bin_image_test, test_run) {
   uint32_t ht = 1200;
   uint32_t wh = 1200;

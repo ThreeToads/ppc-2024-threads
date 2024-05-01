@@ -5,8 +5,6 @@
 
 #include "omp/kokin_marking_component_bin_image/include/ops_omp.hpp"
 
-using namespace KokinOmpRealese;
-
 TEST(kokin_marking_component_bin_image, test_5_5) {
   uint32_t ht = 5;
   uint32_t wh = 5;
