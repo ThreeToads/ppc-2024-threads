@@ -6,8 +6,6 @@
 
 using namespace std::chrono_literals;
 
-namespace KokinOmpRealese {
-
 bool imageMarkingOMP::run() {
   // func run
   internal_order_test();
@@ -107,4 +105,3 @@ bool imageMarkingOMP::post_processing() {
   }
   return true;
 }
-}  // namespace KokinOmpRealese
