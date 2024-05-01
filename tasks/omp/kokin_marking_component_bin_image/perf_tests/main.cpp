@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "core/perf/include/perf.hpp"
-#include "seq/kokin_marking_component_bin_image/include/ops_seq.hpp"
+#include "omp/kokin_marking_component_bin_image/include/ops_omp.hpp"
 
 using namespace KokinOmpRealese;
 
