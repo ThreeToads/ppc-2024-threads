@@ -93,14 +93,14 @@ bool imageMarkingOMP::validation() {
   internal_order_test();
   ht = reinterpret_cast<uint32_t *>(taskData->inputs[0])[0];  // init height
   wh = reinterpret_cast<uint32_t *>(taskData->inputs[0])[1];  // init width
-  return (ht * wh == taskData->inputs_count[1] && taskData->inputs_count[1] == taskData->outputs_count[0]);
+  return ((uint32_t)ht * (uint32_t)wh == taskData->inputs_count[1] && taskData->inputs_count[1] == taskData->outputs_count[0]);
 }
 
 bool imageMarkingOMP::post_processing() {
   internal_order_test();
   for (int i = 0; i < ht; ++i) {
     for (int j = 0; j < wh; ++j) {
-      reinterpret_cast<uint32_t *>(taskData->outputs[0])[i * wh + j] = dest[i][j];
+      reinterpret_cast<uint8_t *>(taskData->outputs[0])[i * wh + j] = dest[i][j];
     }
   }
   return true;
